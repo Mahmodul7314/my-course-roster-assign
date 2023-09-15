@@ -2,24 +2,25 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-unused-vars */
 
+import toast, { Toaster } from 'react-hot-toast';
+const notify = () => toast('Here is your toast.');
+
 import React, { useEffect, useState } from 'react';
 import './Home.css'
 import Cart from '../Cart/Cart';
 
 
-
-
 const Home = () => {
-   
     const [courses,setCourses] =useState ([]);
     const [allCourse, setAllCourse] = useState([]);
     const [allTotalHourse,setTotalHourse] = useState(0);
     const [allRemainingHourse, setRemainingHourse] = useState(0);
 
+
     useEffect(()=>{
         fetch('../../../public/data.json')
         .then((res) => res.json())
-        .then((data) => setCourses(data))
+        .then((data) => setCourses(data));
     },[]);
 
 const handleSelect =(course) =>{
@@ -27,14 +28,14 @@ const handleSelect =(course) =>{
  const isExist = allCourse.find((item) =>item.id == course.id);
  let count = course.credit_hours;
  if(isExist){
-  return alert('you are added one time this')
+    toast.error("You Can't Select Same Course Twice !");
    
  }else{
     allCourse.forEach((item) =>{
      count = count + item.credit_hours;
     });
     if(count>20){
-        return alert(" You added your limitation hourse,cant added more ")
+        toast.error("You have added your maximum credit hourse. Can't add more !");
     }else{
         setAllCourse([...allCourse,course]);
         setTotalHourse(count);
@@ -68,7 +69,8 @@ const handleSelect =(course) =>{
                             <p className='price'>Price : {course.price}</p>
                             <p className='hours'>Credit : {course.credit_hours}hr</p>
                         </div>
-                        <button onClick={()=>handleSelect(course)} className='btn'>Select</button>
+                        <button onClick= {()=>handleSelect(course)} className='btn'>Select</button>
+                        <Toaster />
                     </div>
 
                     ))
