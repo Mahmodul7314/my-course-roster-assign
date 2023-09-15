@@ -1,0 +1,83 @@
+.course-regi-title{
+    font-size: 32px;
+    color: #1C1B1B;
+    font-weight:700;
+    font-style: normal;
+ 
+  
+}
+.card{
+    width: 280px;
+    height: 450px;
+    background-color: white;
+    padding: 12px;
+    border-radius: 10px;
+}
+.img{
+    border-radius: 10px;
+    
+}
+.title{
+    color: #1C1B1B;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+
+
+}
+.description{
+    color: rgba(28, 27, 27, 0.60);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    height:120px;
+    text-align: justify;
+}
+.price{
+    color:rgba(28, 27, 27, 0.60);
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    
+}
+.hours{
+    color:rgba(28, 27, 27, 0.60);
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+}
+.price-credit-container{
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 10px;
+   
+}
+.btn{
+    width: 280px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;
+    background-color: #2F80ED;
+    border-radius: 10px;
+}
+.home-container{
+    display: flex;
+    gap: 25px;
+ 
+   
+ 
+}
+.card-container{
+    width:75%;
+    gap:10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+   
+    /* display: flex;
+    flex-wrap: wrap; */
+}

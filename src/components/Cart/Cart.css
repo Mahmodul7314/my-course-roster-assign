@@ -1,0 +1,51 @@
+.course-name{
+    color: #1C1B1B;
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+.cart-container{
+    background-color:white;
+    padding:5px;
+    border-radius: 10px;
+    height: max-content;
+   
+}
+.creadit-hour{
+    font-size: 18px;
+    font-weight: 700;
+    font-style: normal;
+    color:  #2F80ED;
+};
+.hrtext{
+    height: 2px;
+    background: rgba(28, 27, 27, 0.20);
+    
+}
+.course-title{
+    font-size: 20px;
+    color:#1C1B1B;
+    font-weight: 700;
+    font-style: normal;
+    text-align: left;
+   
+}
+.course-item,li{
+color: rgba(28, 27, 27, 0.60);
+font-size: 16px;
+text-align: left;
+font-style: normal;
+font-weight: 400;
+line-height: 30px;
+padding-bottom: 10px;
+list-style: none;
+}
+.credit-hour{
+color: rgba(28, 27, 27, 0.80);
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-align: left;
+}
