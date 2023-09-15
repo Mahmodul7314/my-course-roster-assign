@@ -14,6 +14,7 @@ const Home = () => {
     const [courses,setCourses] =useState ([]);
     const [allCourse, setAllCourse] = useState([]);
     const [allTotalHourse,setTotalHourse] = useState(0);
+    const [allRemainingHourse, setRemainingHourse] = useState(0);
 
     useEffect(()=>{
         fetch('../../../public/data.json')
@@ -32,10 +33,15 @@ const handleSelect =(course) =>{
     allCourse.forEach((item) =>{
      count = count + item.credit_hours;
     });
-    
-  
-    setAllCourse([...allCourse,course]);
-    setTotalHourse(count);
+    if(count>20){
+        return alert(" You added your limitation hourse,cant added more ")
+    }else{
+        setAllCourse([...allCourse,course]);
+        setTotalHourse(count);
+    }
+  const remainingHourse = 20 - count;
+ setRemainingHourse(remainingHourse);
+ 
  }
  
     
@@ -71,8 +77,9 @@ const handleSelect =(course) =>{
                 </div>
                 <div className="cart-container">
                     <Cart 
-                    allCourse={allCourse}
-                    allTotalHourse={allTotalHourse}
+                    allCourse = {allCourse}
+                    allTotalHourse = {allTotalHourse}
+                    allRemainingHourse = {allRemainingHourse}
                     ></Cart>
                 </div>
             </div>
