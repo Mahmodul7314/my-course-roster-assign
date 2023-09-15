@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-unused-vars */
+
 import React, { useEffect, useState } from 'react';
 import './Home.css'
 import Cart from '../Cart/Cart';
@@ -9,9 +10,10 @@ import Cart from '../Cart/Cart';
 
 
 const Home = () => {
-
+   
     const [courses,setCourses] =useState ([]);
     const [allCourse, setAllCourse] = useState([]);
+    const [allTotalHourse,setTotalHourse] = useState(0);
 
     useEffect(()=>{
         fetch('../../../public/data.json')
@@ -20,7 +22,21 @@ const Home = () => {
     },[]);
 
 const handleSelect =(course) =>{
- setAllCourse([...allCourse,course]);
+
+ const isExist = allCourse.find((item) =>item.id == course.id);
+ let count = course.credit_hours;
+ if(isExist){
+  return alert('you are added one time this')
+   
+ }else{
+    allCourse.forEach((item) =>{
+     count = count + item.credit_hours;
+    });
+    
+  
+    setAllCourse([...allCourse,course]);
+    setTotalHourse(count);
+ }
  
     
 }
@@ -28,6 +44,7 @@ const handleSelect =(course) =>{
 
 
     return (
+      
         <div>
             <h1 className='course-regi-title'>Course Registration</h1>
             <div className="home-container">
@@ -55,6 +72,7 @@ const handleSelect =(course) =>{
                 <div className="cart-container">
                     <Cart 
                     allCourse={allCourse}
+                    allTotalHourse={allTotalHourse}
                     ></Cart>
                 </div>
             </div>

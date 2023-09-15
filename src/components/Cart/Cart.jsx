@@ -1,8 +1,8 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import './Cart.css'
-const Cart = ({allCourse}) => {
-   
+const Cart = ({allCourse,allTotalHourse}) => {
+  
 
 
     
@@ -21,7 +21,7 @@ const Cart = ({allCourse}) => {
                 }
                 </div>
                 <hr className='hrtext'></hr>
-                <h3 className='credit-hour'>Total Credit Hour : 13</h3>
+                <h3 className='credit-hour'>Total Credit Hour : {allTotalHourse}</h3>
                 
             </div>
             

@@ -1,61 +1,61 @@
 [
-    {
+    { "id": 1,
       "image": "https://i.ibb.co/L1g362z/Rectangle-2-2.png",
       "title": "Introduction to C Programming",
       "description": "Explore the world of C programming with this comprehensive course. Master the fundamentals of coding and lay a strong foundation in programming, all without needing any prior experience.",
       "price": 15000,
       "credit_hours": 1
     },
-    {
+    { "id": 2,
       "image": "https://i.ibb.co/bs2Gw7D/Rectangle-2-3.png",
       "title": "Introduction to Algorithms",
       "description": "Dive deep into the fascinating realm of algorithms. Discover the power of data science and machine learning through hands-on projects and real-world applications in this engaging course.",
       "price": 25000,
       "credit_hours": 2
     },
-    {
+    { "id": 3,
       "image": "https://i.ibb.co/kyQ9hrb/Rectangle-2-4.png",
       "title": "Introduction to C++ for DSA",
       "description": "Embark on a journey to master web development with C++. Build dynamic, responsive websites from scratch as you delve into the world of Data Structures and Algorithms (DSA).",
       "price": 10000,
       "credit_hours": 10
     },
-    {
+    { "id": 4,
       "image": "https://i.ibb.co/Sx00VVc/Rectangle-3.png",
       "title": "Basic Data Structures",
       "description": "Unlock the latest digital marketing trends and strategies that will empower you to expand your online presence. This course is your key to staying ahead in the digital world.",
       "price": 35000,
       "credit_hours": 5
     },
-    {
+    { "id": 5,
       "image": "https://i.ibb.co/Sn6cGRD/Rectangle-2.png",
       "title": "Introduction to OOP Python",
       "description": "Delve into the basics of graphic design, featuring essential tools like Adobe Photoshop and Illustrator. This course is your gateway to the world of creative design.",
       "price": 19000,
       "credit_hours": 5
     },
-    {
+    { "id": 6,
       "image": "https://i.ibb.co/gR4wsDR/Rectangle-2-5.png",
       "title": "Software Engineering",
       "description": "Acquire financial literacy and the skills to manage personal and business finances effectively. This course will empower you to make informed financial decisions.",
       "price": 23000,
       "credit_hours": 2
     },
-    {
+    { "id": 7,
       "image": "https://i.ibb.co/VtbcdQq/Rectangle-3-1.png",
       "title": "AWS, Cloud Computing",
       "description": "Tap into your creative potential and enhance your writing skills with expert guidance in this engaging course. Explore the art of expression and storytelling.",
       "price": 35000,
       "credit_hours": 5
     },
-    {
+    { "id": 8,
       "image": "https://i.ibb.co/JrPsg8J/Rectangle-2-1.png",
       "title": "Database (MySQL)",
       "description": "Get introduced to the exciting world of Artificial Intelligence (AI) and its diverse applications across various industries. Discover the future of technology.",
       "price": 19000,
       "credit_hours": 5
     },
-    {
+    { "id": 9,
       "image": "https://i.ibb.co/tcG9wq3/Rectangle-2-6.png",
       "title": "Problem-Solving Part",
       "description": "Learn about holistic health and wellness practices while becoming a certified wellness coach. This course is your path to holistic well-being and coaching expertise.",
