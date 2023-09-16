@@ -45,13 +45,11 @@ const handleSelect =(course) =>{
     }
 //   const remainingHourse = 20 - count;
 //  setRemainingHourse(remainingHourse);
- 
+
  }
    
 }
-
     return (
-      
         <div>
             <h1 className='course-regi-title'>Course Registration</h1>
             <div className="home-container">

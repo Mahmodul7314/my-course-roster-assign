@@ -107,16 +107,16 @@
         display: grid;
         align-items: center;
         grid-template-columns: repeat(2,1fr);
-          }
-          .home-container{
-            flex-direction:column-reverse;
-          }
+        }
+        .home-container{
+         flex-direction:column-reverse;
+        }
         .cart-container{
-           width: 400px;
-           text-align: center;
+        width: 400px;
+        text-align: center;
         }
         .course-regi-title{
-            width:100%;
+         width:100%;
            
             
         }
