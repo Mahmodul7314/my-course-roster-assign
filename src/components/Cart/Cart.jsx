@@ -5,7 +5,7 @@ const Cart = ({allCourse,allTotalHourse,allRemainingHourse }) => {
   
     return (
         <div className='cart-container'>
-            <h3 className='creadit-hour'>Creadit Hour Remaining {allRemainingHourse? allRemainingHourse:0} hr</h3>
+            <h3 className='creadit-hour'>Creadit Hour Remaining {allRemainingHourse} hr</h3>
             <hr className='hrtext'></hr>
             <div>
                 <h3 className='course-title'>Course Name</h3>

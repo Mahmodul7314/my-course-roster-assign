@@ -1,13 +1,13 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-unused-vars */
-
+// import {TfiMoney} from 'react-icons/fa';
 import toast, { Toaster } from 'react-hot-toast';
-const notify = () => toast('Here is your toast.');
 
 import React, { useEffect, useState } from 'react';
 import './Home.css'
 import Cart from '../Cart/Cart';
+// import { FiDollarSign } from 'react-icons/fa';
 
 
 const Home = () => {
@@ -37,18 +37,18 @@ const handleSelect =(course) =>{
     if(count>20){
         toast.error("You have added your maximum credit hourse. Can't add more !");
     }else{
+        const remainingHourse = 20 - count;
         setAllCourse([...allCourse,course]);
         setTotalHourse(count);
+    
+        setRemainingHourse(remainingHourse);
     }
-  const remainingHourse = 20 - count;
- setRemainingHourse(remainingHourse);
+//   const remainingHourse = 20 - count;
+//  setRemainingHourse(remainingHourse);
  
  }
- 
-    
+   
 }
-// console.log(allCourse);
-
 
     return (
       
@@ -66,7 +66,9 @@ const handleSelect =(course) =>{
                         <p className='description'>{course.description}
                         </p>
                         <div className='price-credit-container'>
+                            <img className='img-png' src="https://i.ibb.co/80dvYhg/icons8-dollar-24.png" alt="" />
                             <p className='price'>Price : {course.price}</p>
+                            <img className='img-png' src="https://i.ibb.co/C9fRmM3/icons8-open-book-24.png" alt="" />
                             <p className='hours'>Credit : {course.credit_hours}hr</p>
                         </div>
                         <button onClick= {()=>handleSelect(course)} className='btn'>Select</button>
