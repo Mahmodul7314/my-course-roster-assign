@@ -18,7 +18,7 @@ const Home = () => {
 
 
     useEffect(()=>{
-        fetch('../../../public/data.json')
+        fetch('public/data.json')
         .then((res) => res.json())
         .then((data) => setCourses(data));
     },[]);
